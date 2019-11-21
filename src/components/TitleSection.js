@@ -10,14 +10,16 @@ const StyledTitle = styled.h2`
   padding: 0 0 0.5% 1%;
   text-transform: uppercase;
   border-bottom: 0.2vw solid #333;
+  display: flex;
+  justify-content: space-between;
 
   & em {
     color: #757373;
-    position: relative;
-    left: 55%;
+    margin-right: 6%;
     font-weight: 400;
     text-transform: initial;
     font-size: 1.35vw;
+    padding-top: 2%;
   }
 
   @media screen and (max-width: 1023px) {
@@ -28,7 +30,6 @@ const StyledTitle = styled.h2`
     }
     & em {
       font-size: 2vw;
-      left: 34%;
     }
   }
   @media screen and (max-width: 500px) {
@@ -40,8 +41,7 @@ const StyledTitle = styled.h2`
       font-size: 2.7vh;
     }
     & em {
-      font-size: 1.4vh;
-      left: 30%;
+      font-size: 1.5vh;
     }
   }
 `;
