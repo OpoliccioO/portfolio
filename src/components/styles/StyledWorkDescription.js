@@ -26,13 +26,12 @@ const StyledWorkDescription = styled.div`
     background: #555;
   }
   @media screen and (max-width: 1023px) {
-    width: 80%;
+    width: 100%;
     padding: 5% 3% 0 3%;
   }
 
   @media screen and (max-width: 500px) {
-    width: 100%;
-    height: 50%;
+    height: 60%;
     z-index: 10;
     padding: 8% 8% 0 8%;
     background: #fff;

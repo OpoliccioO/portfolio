@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import StyledNavList from "../styles/StyledNavList";
 
 const NavList = ({ children }) => {

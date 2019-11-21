@@ -13,7 +13,7 @@ const ContactInfo = () => {
       />
       <ContactInfoItem
         icon={["fab", "github"]}
-        to="https://github.com"
+        to="https://github.com/OpoliccioO"
         target="_blank"
         size="medium"
         text="Github"

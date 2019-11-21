@@ -1,10 +1,9 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import StyledWorkDescription from "../styles/StyledWorkDescription";
 import TextBox from "../TextBox";
 import { Tag } from "../IconTag";
 import TagContainer from "./TagContainer";
 import Link from "../Link";
-import { useTransition, animated, config } from "react-spring";
 
 const WorkDescription = ({
   titleWork,
@@ -14,23 +13,6 @@ const WorkDescription = ({
   hrefDemo,
   hrefCode
 }) => {
-  /*
-  const [toogle, set] = useState(false);
-  const onClick = useCallback(e => {
-    console.log(e.target.parentNode.title);
-    if (e.target.parentNode.className.indexOf("svg-") !== -1) {
-      console.log(e.target.parentNode);
-    }
-    set(state => !state);
-  }, []);
-  const transitions = useTransition(toogle, null, {
-    initial: { transform: "translate3d(0%,0%,0)" },
-    from: { transform: "translate3d(0%,0%,0)" },
-    enter: { opacity: 1, transform: "translate3d(0%,100%,0)" },
-    leave: { opacity: 1, transform: "translate3d(0%,-100%,0)" },
-    config: { mass: 1, tension: 280, friction: 62 }
-  });
-  */
   return (
     <StyledWorkDescription>
       <TextBox className="title-work" title={<h3>{titleWork}</h3>}>

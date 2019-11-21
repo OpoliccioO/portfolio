@@ -9,10 +9,11 @@ const StyledContactInfo = styled.div`
   @media screen and (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
+    margin-top: 15%;
   }
 
   @media screen and (max-width: 500px) {
-    margin: 20% 5% 5%;
+    margin-top: 20%;
   }
 `;
 

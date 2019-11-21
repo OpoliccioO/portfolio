@@ -11,24 +11,47 @@ const StyledTitle = styled.h2`
   text-transform: uppercase;
   border-bottom: 0.2vw solid #333;
 
+  & em {
+    color: #757373;
+    position: relative;
+    left: 55%;
+    font-weight: 400;
+    text-transform: initial;
+    font-size: 1.35vw;
+  }
+
   @media screen and (max-width: 1023px) {
     & {
-      width: 100%;
       border: 0;
       font-size: 4.5vw;
-      padding-left: 5%;
-      padding-top: 5%;
+      margin-top: 6%;
+    }
+    & em {
+      font-size: 2vw;
+      left: 34%;
     }
   }
   @media screen and (max-width: 500px) {
     & {
       margin-top: 0;
+      width: 100%;
+      padding-left: 5%;
+      padding-top: 7%;
+    }
+    & em {
+      font-size: 2.5vw;
+      left: 32%;
     }
   }
 `;
 
-const TitleSection = ({ title }) => {
-  return <StyledTitle>{title}</StyledTitle>;
+const TitleSection = ({ title, mutedText }) => {
+  return (
+    <StyledTitle>
+      {title}
+      <em>{mutedText ? mutedText : null}</em>
+    </StyledTitle>
+  );
 };
 
 export default TitleSection;

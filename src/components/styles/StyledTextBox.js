@@ -68,16 +68,16 @@ const StyledTextBox = styled.div`
     }
 
     & h3 {
-      font-size: 2.2vw;
+      font-size: 3.5vw;
       width: 80%;
     }
 
     & h4 {
-      font-size: 1.6vw;
+      font-size: 2.7vw;
     }
 
     & p {
-      font-size: ${props => !props.contact && "1.35vw"};
+      font-size: ${props => (props.contact ? "2.5vw" : "1.9vw")};
     }
   }
 
@@ -88,13 +88,8 @@ const StyledTextBox = styled.div`
       word-spacing: 1vw;
     }
 
-    & a + p,
-    h4 + p {
-      margin-bottom: 3%;
-    }
-
     & h3 {
-      font-size: 3.7vw;
+      font-size: 3.8vw;
       width: 80%;
     }
 
@@ -103,7 +98,7 @@ const StyledTextBox = styled.div`
     }
 
     & p {
-      font-size: ${props => (props.contact ? "3.2vw" : "2.7vw")};
+      font-size: ${props => (props.contact ? "3.2vw" : "2.8vw")};
     }
   }
 `;

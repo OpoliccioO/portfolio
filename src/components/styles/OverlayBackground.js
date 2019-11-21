@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import ComputerBricks from "../../assets/computer_brickwall.jpg";
 
 const OverlayBackground = styled.div`
   display: ${props => (props.works ? "none" : "block")};

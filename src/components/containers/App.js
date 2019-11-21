@@ -4,7 +4,7 @@ import Header from "./Header";
 import SocialNavbar from "./SocialNavbar";
 import Navbar from "./Navbar";
 import Works from "./Works";
-import ContactFooter from "./ContactFooter";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <SocialNavbar />
       <Navbar />
       <Works />
-      <ContactFooter />
+      <Contact />
       <GlobalStyles />
     </>
   );

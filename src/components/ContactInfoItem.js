@@ -28,31 +28,34 @@ const StyledInfoItem = styled.div`
 
   @media screen and (max-width: 1023px) {
     & {
-      width: 50%;
-      margin-bottom: 6%;
+      width: 80%;
+      margin-bottom: 15%;
+      padding: 4%;
     }
 
     & a {
-      font-size: 2vw;
+      font-size: 3.8vw;
+    }
+
+    & svg {
+      font-size: 3.5vw;
     }
   }
 
   @media screen and (max-width: 500px) {
     & {
-      width: 80%;
-      margin-bottom: 15%;
+      padding: 5%;
     }
-
     & a {
-      font-size: 4vw;
+      font-size: 5vw;
     }
 
     & span {
-      bottom: 65%;
+      bottom: 70%;
     }
 
     & svg {
-      font-size: 4vw;
+      font-size: 4.5vw;
     }
   }
 `;

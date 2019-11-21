@@ -43,18 +43,18 @@ const StyledLink = styled.a.attrs(props => ({
       display: inline-table;
       bottom: 0;
       top: -5px;
-      left: ${props => (props.demo ? "85%" : "95%")};
+      left: ${props => (props.demo ? "83%" : "95%")};
       color: #333;
     }
 
     &.description-work svg {
-      font-size: 1.8vw;
+      font-size: 3vw;
     }
   }
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 500px) {
     &.description-work svg {
-      font-size: 3vw;
+      font-size: 3.5vw;
     }
   }
 `;

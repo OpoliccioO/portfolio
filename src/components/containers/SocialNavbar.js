@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { animated, useSpring, config } from "react-spring";
 import { useScroll } from "react-use-gesture";
 import StyledSocialNavbar from "../styles/StyledSocialNavbar";
 import { Icon } from "../IconTag";

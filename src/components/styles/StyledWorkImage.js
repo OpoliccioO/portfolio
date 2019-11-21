@@ -20,13 +20,12 @@ const StyledImg = styled.div`
   }
 
   @media screen and (max-width: 1023px) {
-    width: 80%;
+    width: 100%;
     height: 50%;
   }
 
   @media screen and (max-width: 500px) {
-    width: 100%;
-    height: 50%;
+    height: 40%;
   }
 `;
 

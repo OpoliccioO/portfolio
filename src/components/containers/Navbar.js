@@ -10,19 +10,13 @@ const active = [
 ];
 
 const Navbar = props => {
-  const homeRef = useRef();
   const worksRef = useRef();
   const contactRef = useRef();
   const [section, setSection] = useState(["home", "home", "home"]);
-  /*const [{ section }, set] = useSpring(() => ({
-    section: "home",
-    config: config.stiff
-  }));*/
 
   const bind = useScroll(
     ({ xy: [x, y] }) => {
       const sectionHeight = window.innerHeight * 0.65;
-      const homeWidth = homeRef.current.offsetWidth * 1.16;
       const worksWidth = worksRef.current.offsetWidth * 1.16;
       const contactWidth = contactRef.current.offsetWidth * 1.16;
 
@@ -85,7 +79,6 @@ const Navbar = props => {
           to="#home"
           linkText="Home"
           title="Home"
-          ref={homeRef}
           colorHome={section[0]}
           onClick={() => scrollToSection(0)}
         />

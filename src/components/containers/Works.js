@@ -2,36 +2,29 @@ import React, { useState, useCallback } from "react";
 import StyledWorks from "../styles/StyledWorks";
 import Work from "./Work";
 import TitleSection from "../TitleSection";
-import { useTransition, animated, config } from "react-spring";
+import { useTransition, animated } from "react-spring";
 import WorksData from "../../WorksData";
-
-const pages = [
-  ({ style }) => (
-    <animated.div style={{ ...style }}>
-      <Work {...WorksData[0]} />
-    </animated.div>
-  ),
-  ({ style }) => (
-    <animated.div style={{ ...style }}>
-      <Work {...WorksData[1]} />
-    </animated.div>
-  ),
-  ({ style }) => (
-    <animated.div style={{ ...style }}>
-      <Work {...WorksData[2]} />
-    </animated.div>
-  )
-];
 
 const Works = () => {
   const [index, set] = useState(0);
+
   const onClick = useCallback(e => {
-    /*console.log(e.target.parentNode.title);
-    if (e.target.parentNode.className.indexOf("svg-") !== -1) {
-      console.log(e.target.parentNode);
-    }*/
-    set(state => (state + 1) % pages.length);
+    e.target.tagName !== "svg" &&
+      e.target.tagName !== "path" &&
+      set(state => (state + 1) % WorksData.length);
   }, []);
+  /*
+  const [hover, setHover] = useState(false);
+  const onMouseEnter = useCallback(() => {
+    setHover(true);
+  }, []);
+  const onMouseLeave = useCallback(() => {
+    setHover(false);
+  }, []);
+          onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+  */
+
   const transitions = useTransition(index, p => p, {
     initial: { transform: "translate3d(0%,0%,0)" },
     from: { transform: "translate3d(0%,100%,0)" },
@@ -42,10 +35,12 @@ const Works = () => {
 
   return (
     <StyledWorks>
-      <TitleSection title="Works" />
+      <TitleSection
+        title="Works"
+        mutedText="(Clica o aprieta para pasar al siguiente)"
+      />
       <div className="simple-trans-main" onClick={onClick}>
         {transitions.map(({ item, props, key }) => {
-          //const Page = pages[item];
           return (
             <animated.div key={key} style={props}>
               <Work {...WorksData[item]} />

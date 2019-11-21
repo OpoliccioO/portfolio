@@ -11,7 +11,7 @@ const StyledTag = styled.span`
   position: relative;
 
   @media screen and (max-width: 1023px) {
-    font-size: 1.05vw;
+    font-size: 1.7vw;
     border-radius: 0.5vw;
   }
   @media screen and (max-width: 500px) {
