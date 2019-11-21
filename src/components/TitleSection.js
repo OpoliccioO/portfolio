@@ -40,8 +40,8 @@ const StyledTitle = styled.h2`
       font-size: 2.7vh;
     }
     & em {
-      font-size: 1.3vh;
-      left: 20%;
+      font-size: 1.4vh;
+      left: 30%;
     }
   }
 `;
