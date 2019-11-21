@@ -15,7 +15,7 @@ const StyledTag = styled.span`
     border-radius: 0.5vw;
   }
   @media screen and (max-width: 500px) {
-    font-size: 2.2vw;
+    font-size: 1.55vh;
     padding: 0.5vw 1.2vw 0.5vw 1.2vw;
   }
 `;

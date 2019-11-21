@@ -26,7 +26,7 @@ const StyledWorks = styled.section`
 
   @media screen and (max-width: 500px) {
     & .simple-trans-main {
-      margin: 5% 0 0 0;
+      margin: 7% 0 0 0;
       padding: 0;
       width: 100%;
       height: 100%;

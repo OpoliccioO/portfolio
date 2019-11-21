@@ -53,7 +53,19 @@ const GlobalStyles = createGlobalStyle`
 
   @media screen and (min-width: 1024px) {
     header, section, footer {
-      min-height:700px;
+      min-height:768px;
+    }
+  }
+
+  @media screen and (min-width: 1441px) {
+    header, section, footer {
+      min-height:900px;
+    }
+  }
+
+  @media screen and (min-width: 1921px) {
+    header, section, footer {
+      min-height:1100px;
     }
   }
 `;

@@ -37,10 +37,11 @@ const StyledTitle = styled.h2`
       width: 100%;
       padding-left: 5%;
       padding-top: 7%;
+      font-size: 2.7vh;
     }
     & em {
-      font-size: 2.5vw;
-      left: 32%;
+      font-size: 1.3vh;
+      left: 20%;
     }
   }
 `;
