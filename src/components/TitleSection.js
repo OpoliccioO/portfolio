@@ -37,11 +37,15 @@ const StyledTitle = styled.h2`
       margin-top: 0;
       width: 100%;
       padding-left: 5%;
-      padding-top: 7%;
+      padding-top: 8%;
       font-size: 2.7vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
     & em {
-      font-size: 1.5vh;
+      font-size: 1.55vh;
+      padding-top: 0.1vh;
     }
   }
 `;

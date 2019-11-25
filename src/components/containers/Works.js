@@ -36,7 +36,7 @@ const Works = () => {
   return (
     <StyledWorks>
       <TitleSection
-        title="Works"
+        title="Portfolio"
         mutedText="(Clica o aprieta para pasar al siguiente)"
       />
       <div className="simple-trans-main" onClick={onClick}>

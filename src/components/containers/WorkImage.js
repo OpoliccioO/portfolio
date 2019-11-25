@@ -12,7 +12,7 @@ const WorkImage = ({ src, alt, hrefDemo, hrefCode }) => {
         Demo
       </Link>
       <Link code href={hrefCode} target="_blank">
-        Codigo
+        Código
       </Link>
     </StyledWorkImage>
   );

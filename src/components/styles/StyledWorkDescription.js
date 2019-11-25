@@ -33,7 +33,7 @@ const StyledWorkDescription = styled.div`
   @media screen and (max-width: 500px) {
     height: 60%;
     z-index: 10;
-    padding: 8% 8% 0 8%;
+    padding: 8% 6% 0 6%;
     background: #fff;
   }
 `;

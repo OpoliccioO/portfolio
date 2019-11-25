@@ -17,7 +17,7 @@ const StyledNavItem = styled.li`
     color: ${props => (props.colorHome === "home" ? "#fff" : "#333")};
   }
 
-  & a[title="Works"] {
+  & a[title="Portfolio"] {
     color: ${props => (props.colorWorks === "home" ? "#fff" : "#333")};
   }
 

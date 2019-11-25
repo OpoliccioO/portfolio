@@ -83,9 +83,9 @@ const Navbar = props => {
           onClick={() => scrollToSection(0)}
         />
         <NavItem
-          to="#works"
-          linkText="Works"
-          title="Works"
+          to="#portfolio"
+          linkText="Portfolio"
+          title="Portfolio"
           ref={worksRef}
           colorWorks={section[1]}
           onClick={() => scrollToSection(1)}

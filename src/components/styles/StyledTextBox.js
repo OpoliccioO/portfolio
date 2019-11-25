@@ -89,16 +89,16 @@ const StyledTextBox = styled.div`
     }
 
     & h3 {
-      font-size: 2.55vh;
+      font-size: 2.6vh;
       width: 80%;
     }
 
     & h4 {
-      font-size: 2vh;
+      font-size: 2.1vh;
     }
 
     & p {
-      font-size: ${props => (props.contact ? "2vh" : "1.6vh")};
+      font-size: ${props => (props.contact ? "2vh" : "1.75vh")};
     }
   }
 `;
