@@ -6,6 +6,34 @@ import Portfolio from "./assets/portfolio.jpg";
 const WorksData = [
   {
     image: Videoplayer,
+    hrefDemo: "https://crwn-wear.herokuapp.com/",
+    hrefCode: "https://github.com/OpoliccioO/crown-clothing",
+    titleWork: "CRWN Wear",
+    infoApp: (
+      <p>
+        Creada con <em>creat-react-app</em>, utiliza Firebase como{" "}
+        <em>back-end</em> y <em>hosted</em> en Heroku
+      </p>
+    ),
+    description:
+      "E-commerce de ropa. Dispone de autenticación, tanto propia, como con una cuenta de Google. La app provee: homepage, shop, shop/:categoria, signin y checkout.",
+    tecnologies: [
+      "HTML5",
+      "CSS3",
+      "Sass",
+      "React.js",
+      "Firebase",
+      "React Stripe Checkout",
+      "React Router",
+      "Redux",
+      "Redux Logger",
+      "Redux Persist",
+      "Redux Saga",
+      "Reselect"
+    ]
+  },
+  {
+    image: Videoplayer,
     hrefDemo: "https://policciovideoplayer.netlify.com",
     hrefCode: "https://github.com/OpoliccioO/Videoplayer",
     titleWork: "React VideoPlayer",
