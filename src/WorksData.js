@@ -2,10 +2,11 @@ import React from "react";
 import Videoplayer from "./assets/videoplayer.jpg";
 import CompaArte from "./assets/compaarte.jpg";
 import Portfolio from "./assets/portfolio.jpg";
+import CrwnWear from "./assets/crwn_wear.jpg";
 
 const WorksData = [
   {
-    image: Videoplayer,
+    image: CrwnWear,
     hrefDemo: "https://crwn-wear.herokuapp.com/",
     hrefCode: "https://github.com/OpoliccioO/crown-clothing",
     titleWork: "CRWN Wear",
